@@ -9,14 +9,10 @@
     <title>Portfólio - Guilherme Castro</title>
 </head>
 <body>
-          <nav id="navbar">  
+      <nav id="navbar">  
+            <div id="navbar-container">
                 <a class="logo" href="#">&lsaquo;GC/&rsaquo;</a>
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-                <ul class="nav-list">
+                <ul class="nav-items">
                     <li>
                         <a href="#">Home</a>
                     </li>
@@ -30,7 +26,8 @@
                         <a href="#projetos">Projetos</a>
                     </li>
                 </ul>
-            </nav>
+            </div>    
+        </nav>     
         <header id="showcase">
             <div class="showcase-container">
                 <h1>Guilherme Castro</h1>
@@ -41,7 +38,7 @@
                     </div>
             </div>
         </header>    
-       
+    <main>   
     <!-- About -->
         <section id="about">
             <div class="headline">Sobre mim</div>
@@ -67,15 +64,21 @@
         <section id="projetos">
             <div class="headline">Projetos</div>
             <div id="projetos-container">
-                <img src="https://iili.io/UwT5o7.png" alt="">
+                <img src="https://iili.io/UwT5o7.png" class="projeto-img" alt="">
             </div>
             </div>
                 </div>
             </div>
         </section>
-    <script src="/mobile-navbar.js"></script>
-    <footer class="footer">
-        <p> Feito por Guilherme C. Millares</p>
-    </footer>
+        <script src="./js/main.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+        
+        <footer class="footer">
+         <p> Feito por Guilherme C. Millares</p>
+        </footer>
+    </main>
 </body>
 </html>

@@ -1,13 +1,33 @@
-#showcase-container{
-    padding: 40px;
+#navbar{
+    height: 180px;
+}
+
+#navbar-container{
+    flex-direction: column;
+    font-size: smaller;
+}
+
+.nav-items{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-items li:nth-child(2){
+    border-top: 0.5px solid #333;
+    border-bottom: 0.5px solid #333;
+}
+
+.nav-items li:nth-child(3){
+    border-top: 0.5px solid #333;
+    border-bottom: 0.5px solid #333;
 }
 
 #about-container{
-    flex-direction: column;
-    text-align: center;
+    display: block;
 }
 
-
-
-
-
+.projeto-img{
+    width: 80%;
+    height: 80%;
+}

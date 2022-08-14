@@ -23,6 +23,7 @@ body{
     color: white;
     border-radius: 5px;
     transition: background 500ms ease;
+    margin-top: 10px;
 }
 
 .btn:hover{
@@ -40,6 +41,36 @@ body{
 }
 
 /* Header */
+
+#navbar{
+    width: 100%;
+    background: #111;
+    color: #eee;
+    height: 80px;
+}
+
+#navbar-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.nav-items li{
+    padding: 10px;
+}
 
 a{
     color: #fff;
@@ -73,92 +104,12 @@ main{
     height: 92vh;
 }
 
-.nav-list{
-    list-style: none;
-    display: flex;
-}
 
-.nav-list li{
-    letter-spacing: 3px;
-    margin-left: 32px;
-}
-
-.mobile-menu{
-    display: none;
-    cursor: pointer;
-}
-
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-}
-
-@media (max-width: 999px) {
-    body{
-        overflow-x: hidden;
-    }
-
-
-
-    .nav-list {
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background: #23232e;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-    .nav-list li{
-        margin-left: 0;
-        opacity: 0;
-    }
-    .mobile-menu{
-        display: block;
-
-    }
-}
-
-.nav-list.active{
-    transform: translateX(0);
-}
-
-@keyframes navLinkFade{
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.mobile-menu.active .line1{
-
-    transform: rotate(-45deg) translate(-8px, 8px)
-}
-
-.mobile-menu.active .line2{
-    opacity: 0;
-}
-
-.mobile-menu.active .line3{
-    
-    transform: rotate(45deg) translate(-5px, -7px);
-}
 
 /* showcase */
 
 #showcase{
-    height: 95vh; 
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,6 +134,7 @@ main{
     font-size: 1.2rem;
     padding: 7px 0;
 }
+
 
 /* About */
 
@@ -252,6 +204,7 @@ main{
 #projetos{
     width: 100%;
     padding: 50px;
+    background: white;
 }
 
 #projetos-container{
@@ -260,6 +213,14 @@ main{
     margin: auto;
     display: flex;
     justify-content: center;
+}
+
+.projeto-img{
+    height: 250px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 /* Footer */
