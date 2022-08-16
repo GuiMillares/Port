@@ -27,6 +27,14 @@
     display: block;
 }
 
+#skills-container{
+    grid-template-columns: 1fr;
+}
+
+#skills-container .skills:nth-child(2){
+    margin: 15px 0;
+}
+
 .projeto-img{
     width: 80%;
     height: 80%;

@@ -28,7 +28,7 @@ body{
 
 .btn:hover{
     cursor: pointer;
-    background: #111;
+    background: #1C1C1C;
 }
 
 .headline{
@@ -47,6 +47,7 @@ body{
     background: #111;
     color: #eee;
     height: 80px;
+    position: fixed;
 }
 
 #navbar-container{
@@ -98,13 +99,6 @@ nav{
     height: 8vh;
 }
 
-main{
-    background: url('https://iili.io/UwT7V9.jpg') no-repeat center center;
-    background-size: cover;
-    height: 92vh;
-}
-
-
 
 /* showcase */
 
@@ -114,7 +108,7 @@ main{
     justify-content: center;
     align-items: center;
     color: #eee;
-    background: url(https://iili.io/UwT7V9.jpg) no-repeat center center/cover;
+    background: url(./img/back.jpg) no-repeat center center/cover;
 
     /* Overlay */
     
@@ -155,7 +149,7 @@ main{
 .sobre_img{
     border-left: 5px solid #eee;
     transition: 0.4s;
-    filter: opacity(75%);
+    filter: opacity(80%);
     margin-left: 50px;
 }
 
@@ -184,19 +178,32 @@ main{
     align-items: center;
 }
 
-#experiencias{
+#skills{
     width: 100%;
     background: #222;
     color: #eee;
     padding: 50px;
 }
 
-#exp-container{
+#skills-container{
     width: 100%;
     margin: auto;
     display: grid;
-    align-items: center;
-    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.skills-title{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /* Projetos */

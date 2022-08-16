@@ -8,26 +8,26 @@
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
     <title>Portfólio - Guilherme Castro</title>
 </head>
-<body>
-      <nav id="navbar">  
-            <div id="navbar-container">
-                <a class="logo" href="#">&lsaquo;GC/&rsaquo;</a>
-                <ul class="nav-items">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#experiencias">Experiências</a>
-                    </li>
-                    <li>
-                        <a href="#projetos">Projetos</a>
-                    </li>
-                </ul>
-            </div>    
-        </nav>     
+<body> 
+     <nav id="navbar">  
+        <div id="navbar-container">
+            <a class="logo" href="#showcase">&lsaquo;GC/&rsaquo;</a>
+            <ul class="nav-items">
+                 <li>
+                     <a href="#showcase">Home</a>
+                 </li>
+                 <li>
+                    <a href="#about">Sobre</a>
+                 </li>
+                 <li>
+                     <a href="#skills">Habilidades</a>
+                 </li>
+                <li>
+                     <a href="#projetos">Projetos</a>
+                 </li>
+             </ul>
+         </div>    
+     </nav>         
         <header id="showcase">
             <div class="showcase-container">
                 <h1>Guilherme Castro</h1>
@@ -43,7 +43,8 @@
         <section id="about">
             <div class="headline">Sobre mim</div>
             <div id="about-container">
-                <img src="https://iili.io/UwTYPe.png" alt="" class="sobre_img">
+                <a href="./assets/Guilherme Millares.pdf" download="Guilherme Millares.pdf">
+                <img src="https://iili.io/UwTYPe.png" alt="" class="sobre_img"></a>
                 <div class="sobre">
                     <h2>Diadema, São Paulo</h2>
                     <p>Olá! Meu nome é Guilherme, tenho 21 anos e estou me dedicando a aprender mais sobre programação, 
@@ -53,12 +54,27 @@
                 </div>
             </div>
         </section>
-        <section id="experiencias">
-            <div class="headline">Experiência</div>
-            <div id="exp-container">
-                <p>Atualmente trabalho como Suporte Help desk, e estou procurando a minha primeira experiência como 
-                    programador/desenvolvedor.
-                </p>
+        <section id="skills">
+            <div class="headline">Habilidades</div>
+            <div id="skills-container">
+                <div class="skills">
+                    <i class="fa-brands fa-html5 fa-3x"></i>
+                    <span class="skills-title">HTML</span>
+                    <p>Minhas habilidades em HTML ainda estão sendo desenvolvidas, estou realizando diversos cursos, e sempre me aprimorando.</p>
+                </div>
+                <div class="skills">
+                    <i class="fa-brands fa-css3-alt fa-3x"></i>
+                    <span class="skills-title">CSS</span>
+                    <p>Minhas habilidades em CSS também estou desenvolvendo realizando cursos e projetos, tanto de tutoriais quanto projetos que eu 
+                        planejo fazer por conta própria.</p>
+                </div>
+                <div class="skills">
+                    <i class="fa-brands fa-js fa-3x"></i>
+                    <span class="skills-title">Javascript</span>
+                    <p>Em JS minhas hablidades ainda não foram testadas, não realizei nenhum projeto utilizando JS junto, mas 
+                        para meus futuros projetos irei necessitar muito de JS, por isso procuro aprender bastante nos cursos ao qual estou envolvido.
+                    </p>
+                </div>
             </div>
         </section>
         <section id="projetos">
@@ -70,8 +86,10 @@
                 </div>
             </div>
         </section>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/56ff739f21.js" crossorigin="anonymous"></script>
         <footer class="footer">
-         <p> Feito por Guilherme C. Millares</p>
+         <p> Feito por Guilherme C. Millares - 2022</p>
         </footer>
     </main>
 </body>
